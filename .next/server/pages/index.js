@@ -1,10 +1,10 @@
 (() => {
 var exports = {};
 exports.id = 405;
-exports.ids = [405,521,746,233,469,332,234,38];
+exports.ids = [405,521,233,469,332,234,38,746];
 exports.modules = {
 
-/***/ 2136:
+/***/ 9180:
 /***/ ((module) => {
 
 // Exports
@@ -15,7 +15,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3412:
+/***/ 1641:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -26,7 +26,7 @@ module.exports = {
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9034);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_Layout_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2136);
+/* harmony import */ var _styles_Layout_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9180);
 /* harmony import */ var _styles_Layout_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_Layout_module_css__WEBPACK_IMPORTED_MODULE_2__);
 
 
@@ -54,7 +54,7 @@ function Layout({ children  }) {
 
 /***/ }),
 
-/***/ 4633:
+/***/ 5239:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -120,23 +120,23 @@ async function connectToDatabase() {
 // EXTERNAL MODULE: external "react-scroll"
 var external_react_scroll_ = __webpack_require__(3094);
 // EXTERNAL MODULE: ./components/Layout.js
-var Layout = __webpack_require__(3412);
+var Layout = __webpack_require__(1641);
 // EXTERNAL MODULE: ./pages/landing.js + 1 modules
-var landing = __webpack_require__(7856);
+var landing = __webpack_require__(6774);
 // EXTERNAL MODULE: ./pages/schedule.js
-var schedule = __webpack_require__(4128);
+var schedule = __webpack_require__(250);
 // EXTERNAL MODULE: ./pages/about.js + 1 modules
-var about = __webpack_require__(2698);
+var about = __webpack_require__(6611);
 // EXTERNAL MODULE: ./pages/faq.js + 1 modules
-var faq = __webpack_require__(2636);
+var faq = __webpack_require__(6112);
 // EXTERNAL MODULE: ./pages/help.js + 1 modules
-var help = __webpack_require__(9546);
+var help = __webpack_require__(6738);
 // EXTERNAL MODULE: ./pages/sponsors.js + 7 modules
-var sponsors = __webpack_require__(8367);
+var sponsors = __webpack_require__(5853);
 // EXTERNAL MODULE: ./pages/team.js + 15 modules
-var team = __webpack_require__(6864);
+var team = __webpack_require__(1946);
 // EXTERNAL MODULE: ./styles/Index.module.css
-var Index_module = __webpack_require__(4263);
+var Index_module = __webpack_require__(7784);
 var Index_module_default = /*#__PURE__*/__webpack_require__.n(Index_module);
 ;// CONCATENATED MODULE: ./pages/index.js
 
@@ -229,22 +229,6 @@ module.exports = require("next-auth/client");
 
 /***/ }),
 
-/***/ 3918:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/amp-context.js");
-
-/***/ }),
-
-/***/ 5732:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/amp-mode.js");
-
-/***/ }),
-
 /***/ 3280:
 /***/ ((module) => {
 
@@ -261,19 +245,19 @@ module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
+/***/ 4957:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head.js");
+
+/***/ }),
+
 /***/ 4014:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
-
-/***/ }),
-
-/***/ 4486:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/image-blur-svg.js");
 
 /***/ }),
 
@@ -290,14 +274,6 @@ module.exports = require("next/dist/shared/lib/image-config-context.js");
 
 "use strict";
 module.exports = require("next/dist/shared/lib/image-config.js");
-
-/***/ }),
-
-/***/ 9552:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/image-loader");
 
 /***/ }),
 
@@ -461,27 +437,11 @@ module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
 
 /***/ }),
 
-/***/ 2470:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/side-effect.js");
-
-/***/ }),
-
 /***/ 9232:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/utils.js");
-
-/***/ }),
-
-/***/ 618:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/utils/warn-once.js");
 
 /***/ }),
 
@@ -498,14 +458,6 @@ module.exports = require("next/head");
 
 "use strict";
 module.exports = require("react");
-
-/***/ }),
-
-/***/ 6405:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("react-dom");
 
 /***/ }),
 
@@ -548,7 +500,7 @@ module.exports = require("swr");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [210,121,675,676,664,367,864,813,243,698,856,546,636], () => (__webpack_exec__(4633)));
+var __webpack_exports__ = __webpack_require__.X(0, [503,675,676,664,853,946,250,690,611,774,738,112], () => (__webpack_exec__(5239)));
 module.exports = __webpack_exports__;
 
 })();

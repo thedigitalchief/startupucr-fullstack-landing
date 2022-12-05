@@ -12,14 +12,14 @@ module.exports = require("mongodb");
 
 /***/ }),
 
-/***/ 4600:
+/***/ 8900:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ FetchUsers)
 /* harmony export */ });
-/* harmony import */ var _util_mongodb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6264);
+/* harmony import */ var _util_mongodb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1325);
 
 async function FetchUsers(req, res) {
     try {
@@ -45,7 +45,7 @@ async function FetchUsers(req, res) {
 var __webpack_require__ = require("../../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [264], () => (__webpack_exec__(4600)));
+var __webpack_exports__ = __webpack_require__.X(0, [325], () => (__webpack_exec__(8900)));
 module.exports = __webpack_exports__;
 
 })();

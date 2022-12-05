@@ -5,8 +5,26 @@ exports.id = 820;
 exports.ids = [820];
 exports.modules = {
 
-/***/ 7345:
-/***/ ((module, exports, __webpack_require__) => {
+/***/ 2648:
+/***/ ((__unused_webpack_module, exports) => {
+
+var __webpack_unused_export__;
+
+__webpack_unused_export__ = ({
+    value: true
+});
+exports.Z = _interopRequireDefault;
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+
+
+/***/ }),
+
+/***/ 9185:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({
@@ -15,7 +33,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = void 0;
 var _interop_require_default = (__webpack_require__(2648)/* ["default"] */ .Z);
 var _react = _interop_require_default(__webpack_require__(6689));
-var _head = _interop_require_default(__webpack_require__(3121));
+var _head = _interop_require_default(__webpack_require__(4957));
 const statusCodes = {
     400: "Bad Request",
     404: "This page could not be found",
@@ -98,50 +116,15 @@ class Error extends (_Component = _react.default.Component) {
 Error.displayName = "ErrorPage";
 Error.getInitialProps = _getInitialProps;
 Error.origGetInitialProps = _getInitialProps;
-exports["default"] = Error;
-if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
-    Object.defineProperty(exports.default, "__esModule", {
-        value: true
-    });
-    Object.assign(exports.default, exports);
-    module.exports = exports.default;
-} //# sourceMappingURL=_error.js.map
+exports["default"] = Error; //# sourceMappingURL=_error.js.map
 
 
 /***/ }),
 
-/***/ 3918:
+/***/ 4957:
 /***/ ((module) => {
 
-module.exports = require("next/dist/shared/lib/amp-context.js");
-
-/***/ }),
-
-/***/ 5732:
-/***/ ((module) => {
-
-module.exports = require("next/dist/shared/lib/amp-mode.js");
-
-/***/ }),
-
-/***/ 2796:
-/***/ ((module) => {
-
-module.exports = require("next/dist/shared/lib/head-manager-context.js");
-
-/***/ }),
-
-/***/ 2470:
-/***/ ((module) => {
-
-module.exports = require("next/dist/shared/lib/side-effect.js");
-
-/***/ }),
-
-/***/ 618:
-/***/ ((module) => {
-
-module.exports = require("next/dist/shared/lib/utils/warn-once.js");
+module.exports = require("next/dist/shared/lib/head.js");
 
 /***/ }),
 
@@ -159,7 +142,7 @@ module.exports = require("react");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [210,121], () => (__webpack_exec__(7345)));
+var __webpack_exports__ = (__webpack_exec__(9185));
 module.exports = __webpack_exports__;
 
 })();

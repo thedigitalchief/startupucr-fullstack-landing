@@ -5,7 +5,7 @@ exports.id = 748;
 exports.ids = [748];
 exports.modules = {
 
-/***/ 6106:
+/***/ 3355:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -38,7 +38,7 @@ const options = {
         providers_default().LinkedIn({
             clientId: process.env.LINKEDIN_CLIENT_ID,
             clientSecret: process.env.LINKEDIN_CLIENT_SECRET
-        })
+        }), 
     ],
     callbacks: {
         async session (session, user) {
@@ -63,7 +63,7 @@ const options = {
 var __webpack_require__ = require("../../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(6106));
+var __webpack_exports__ = (__webpack_exec__(3355));
 module.exports = __webpack_exports__;
 
 })();
