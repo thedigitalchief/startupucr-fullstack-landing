@@ -1,0 +1,157 @@
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+  min-height: 80vh;
+  padding: 0 1rem;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 65px;
+  transform: rotateY(180deg);
+}
+
+.wave .shapefill {
+  fill: var(--brand-lightest);
+}
+
+.mainContent {
+  margin: 5rem 0;
+}
+
+.windowContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 2rem;
+}
+
+.content {
+  max-width: 36rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.statsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1.5rem;
+  margin-top: 2rem;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats h1 {
+  margin: 0;
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.stats h2 {
+  margin: 1rem;
+  margin-top: 0;
+  font-size: 2rem;
+  color: var(--brand-darkest);
+}
+
+.window {
+  border: 4px solid var(--brand-lightest);
+  border-radius: 0.5rem;
+  background: var(--brand-white);
+  box-shadow: 0 0.625rem 0.75rem rgba(102, 50, 5, 0.1);
+}
+
+.windowHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  padding-top: 0.7rem;
+  border-bottom: 0.188rem solid var(--brand-lightest);
+}
+
+.windowButton {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+.windowButton:nth-of-type(1) {
+  color: var(--brand-dark);
+}
+.windowButton:nth-of-type(2) {
+  color: var(--brand);
+}
+.windowButton:nth-of-type(3) {
+  color: var(--brand-lighter);
+}
+
+.filler {
+  visibility: hidden;
+}
+
+.aboutContent {
+  display: flex;
+  gap: 2rem;
+}
+
+.plants {
+  width: 15rem;
+}
+
+@media (max-width: 870px) {
+  .statsWrapper {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 870px) and (max-width: 960px) {
+  .statsWrapper {
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .windowContent {
+    flex-direction: column;
+  }
+  .content {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  .statsWrapper{
+    margin-top: 0;
+  }
+  .stats h1 {
+    font-size: 3.5rem;
+  }
+  .stats h2 {
+    font-size: 2rem;
+  }
+  .plants {
+    display: none;
+  }
+}

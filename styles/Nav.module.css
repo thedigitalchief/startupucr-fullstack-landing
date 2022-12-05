@@ -1,0 +1,202 @@
+.navbar {
+  z-index: 20;
+  position: fixed;
+  padding: 1.5rem 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-height: 5.5rem;
+  background-color: var(--nav-bg);
+  backdrop-filter: saturate(180%) blur(20px);
+  -moz-backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.navwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* justify-content: center; */
+  align-items: center;
+  width: 80rem;
+}
+
+.logo {
+  margin-left: 1.25rem;
+  cursor: pointer;
+}
+.mobileLogo {
+  display: none;
+  margin-left: 1.25rem;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.tabs .tab {
+  display: inline-block;
+  position: relative;
+  font-weight: 750;
+  font-size: large;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.tabs .tab:hover {
+  color: var(--brand);
+}
+
+.tabs .tab::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.2rem;
+  bottom: 0;
+  left: 0;
+  background-color: var(--brand);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.tabs .tab:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.primarybutton,
+.secondarybutton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.313rem;
+  font-weight: 750;
+  font-size: large;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.primarybutton {
+  background-color: var(--brand);
+  color: #fff9ef;
+}
+
+.primarybutton:hover {
+  background-color: var(--brand-dark);
+}
+
+.secondarybutton {
+  background-color: #f2e3ca;
+  color: var(--brand);
+}
+
+.secondarybutton:hover {
+  background-color: var(--brand);
+  color: #fff9ef;
+}
+
+.hidetabs {
+  display: none !important;
+}
+
+.menuButtonWrapper {
+  display: none;
+  cursor: pointer;
+}
+
+.menuButton {
+  font-size: 2rem;
+}
+
+.desktopProfile {
+  display: block;
+}
+.mobileProfile {
+  display: none;
+}
+
+@-moz-document url-prefix(){
+  .navbar {
+    background: var(--nav-bg-moz);
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    display: none;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .mobileOpen.tabs {
+    display: flex;
+  }
+  .menuButtonWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 1.25rem;
+    margin-bottom: 0;
+  }
+  .menuButton {
+    transition: transform 150ms ease-in-out;
+  }
+  .menuButton:nth-of-type(1) {
+    position: relative;
+    visibility: visible;
+  }
+  .menuButton:nth-of-type(2) {
+    position: absolute;
+    visibility: hidden;
+  }
+  .open .menuButton:nth-of-type(1) {
+    visibility: hidden;
+    transform: rotate(90deg);
+  }
+  .open .menuButton:nth-of-type(2) {
+    visibility: visible;
+    transform: rotate(90deg);
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .open .navbar {
+    height: 100vh;
+    max-height: 100vh;
+  }
+
+  .navwrapper {
+    flex-direction: column;
+    align-items: inherit;
+    width: inherit;
+  }
+
+  .logo {
+    display: none;
+  }
+  .mobileLogo {
+    display: flex;
+    margin-right: 1.5rem;
+  }
+
+  .mobileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .desktopProfile {
+    display: none;
+  }
+  .mobileProfile {
+    display: block;
+  }
+}
