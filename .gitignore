@@ -8,8 +8,7 @@ node_modules
 
 # testing
 /coverage
-
-
+/build
 
 
 # misc
