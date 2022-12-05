@@ -1,6 +1,6 @@
 node_modules
 .DS_Store
-.next
+
 # dependencies
 /node_modules
 /.pnp
@@ -25,7 +25,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
