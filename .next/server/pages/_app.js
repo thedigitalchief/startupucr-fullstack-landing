@@ -1,10 +1,10 @@
 (() => {
 var exports = {};
 exports.id = 888;
-exports.ids = [888,521,746,233,332,234,38];
+exports.ids = [888,521,746,233,234,332,38];
 exports.modules = {
 
-/***/ 7656:
+/***/ 4852:
 /***/ ((module) => {
 
 // Exports
@@ -21,7 +21,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4211:
+/***/ 456:
 /***/ ((module) => {
 
 // Exports
@@ -47,7 +47,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9139:
+/***/ 4795:
 /***/ ((module) => {
 
 // Exports
@@ -75,7 +75,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7680:
+/***/ 308:
 /***/ ((module) => {
 
 // Exports
@@ -89,7 +89,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7968:
+/***/ 6399:
 /***/ ((module) => {
 
 // Exports
@@ -103,7 +103,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1334:
+/***/ 2451:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -114,7 +114,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3193:
+/***/ 723:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -129,7 +129,7 @@ module.exports = {
 /* harmony import */ var next_auth_client__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_auth_client__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_icons_io5__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9989);
 /* harmony import */ var react_icons_io5__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_icons_io5__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _styles_Footer_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7656);
+/* harmony import */ var _styles_Footer_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4852);
 /* harmony import */ var _styles_Footer_module_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_Footer_module_css__WEBPACK_IMPORTED_MODULE_4__);
 
 
@@ -138,7 +138,7 @@ module.exports = {
 
 function Footer() {
     const [session] = (0,next_auth_client__WEBPACK_IMPORTED_MODULE_2__.useSession)();
-    const { 0: appStatus , 1: setAppStatus  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
+    const [appStatus, setAppStatus] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
     const fetchData = async (id)=>{
         const response = await fetch("/api/checkin", {
             method: "POST",
@@ -248,7 +248,7 @@ function Footer() {
 
 /***/ }),
 
-/***/ 5455:
+/***/ 8731:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -274,11 +274,11 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony import */ var react_scroll__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_scroll__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(1853);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _ProfileDropdown__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(4013);
+/* harmony import */ var _ProfileDropdown__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(834);
 /* harmony import */ var react_icons_hi__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(1111);
 /* harmony import */ var react_icons_hi__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_icons_hi__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _public_assets_logo_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(1334);
-/* harmony import */ var _styles_Nav_module_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(4211);
+/* harmony import */ var _public_assets_logo_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(2451);
+/* harmony import */ var _styles_Nav_module_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(456);
 /* harmony import */ var _styles_Nav_module_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_styles_Nav_module_css__WEBPACK_IMPORTED_MODULE_12__);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_ProfileDropdown__WEBPACK_IMPORTED_MODULE_9__]);
 _ProfileDropdown__WEBPACK_IMPORTED_MODULE_9__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
@@ -298,7 +298,7 @@ _ProfileDropdown__WEBPACK_IMPORTED_MODULE_9__ = (__webpack_async_dependencies__.
 function Nav() {
     const [session] = (0,next_auth_client__WEBPACK_IMPORTED_MODULE_4__.useSession)();
     const router = (0,next_router__WEBPACK_IMPORTED_MODULE_8__.useRouter)();
-    const { 0: isMobile , 1: setIsMobile  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+    const [isMobile, setIsMobile] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     var buttonVariants = {};
     if (!isMobile) buttonVariants = {
         hover: {
@@ -308,12 +308,12 @@ function Nav() {
             scale: 0.995
         }
     };
-    const { 0: targetElement , 1: setTargetElement  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
-    const { 0: checkedIn , 1: setCheckedIn  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
-    const { 0: inGroup , 1: setInGroup  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
-    const { 0: groupId , 1: setGroupId  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
-    const { 0: appStatus , 1: setAppStatus  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
-    const { 0: open , 1: setOpen  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+    const [targetElement, setTargetElement] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+    const [checkedIn, setCheckedIn] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+    const [inGroup, setInGroup] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+    const [groupId, setGroupId] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
+    const [appStatus, setAppStatus] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
+    const [open, setOpen] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     const fetchData = async (id)=>{
         const response = await fetch("/api/checkin", {
             method: "POST",
@@ -661,7 +661,7 @@ __webpack_async_result__();
 
 /***/ }),
 
-/***/ 4013:
+/***/ 834:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -686,7 +686,7 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony import */ var react_icons_hi__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_icons_hi__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(6290);
 /* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _styles_ProfileDropdown_module_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(9139);
+/* harmony import */ var _styles_ProfileDropdown_module_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(4795);
 /* harmony import */ var _styles_ProfileDropdown_module_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_styles_ProfileDropdown_module_css__WEBPACK_IMPORTED_MODULE_9__);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_hot_toast__WEBPACK_IMPORTED_MODULE_5__]);
 react_hot_toast__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
@@ -703,7 +703,7 @@ react_hot_toast__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.t
 function ProfileDropdown(props) {
     const [session] = (0,next_auth_client__WEBPACK_IMPORTED_MODULE_3__.useSession)();
     const router = (0,next_router__WEBPACK_IMPORTED_MODULE_6__.useRouter)();
-    const { 0: isMobile , 1: setIsMobile  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+    const [isMobile, setIsMobile] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     var buttonVariants = {};
     if (!isMobile) buttonVariants = {
         hover: {
@@ -713,7 +713,7 @@ function ProfileDropdown(props) {
             scale: 0.995
         }
     };
-    const { 0: openProfile , 1: setOpenProfile  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+    const [openProfile, setOpenProfile] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     const triggerWarning = ()=>{
         (0,react_hot_toast__WEBPACK_IMPORTED_MODULE_5__["default"])(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             className: (_styles_ProfileDropdown_module_css__WEBPACK_IMPORTED_MODULE_9___default().toast),
@@ -851,7 +851,7 @@ __webpack_async_result__();
 
 /***/ }),
 
-/***/ 7033:
+/***/ 1283:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -868,7 +868,7 @@ __webpack_async_result__();
 /* harmony import */ var next_auth_client__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_auth_client__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react_icons_io5__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9989);
 /* harmony import */ var react_icons_io5__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_icons_io5__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _styles_Socials_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7968);
+/* harmony import */ var _styles_Socials_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6399);
 /* harmony import */ var _styles_Socials_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_Socials_module_css__WEBPACK_IMPORTED_MODULE_5__);
 
 
@@ -878,7 +878,7 @@ __webpack_async_result__();
 
 function Socials() {
     const [session] = (0,next_auth_client__WEBPACK_IMPORTED_MODULE_3__.useSession)();
-    const { 0: appStatus , 1: setAppStatus  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
+    const [appStatus, setAppStatus] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
     const fetchData = async (id)=>{
         const response = await fetch("/api/checkin", {
             method: "POST",
@@ -997,7 +997,7 @@ function Socials() {
 
 /***/ }),
 
-/***/ 5279:
+/***/ 8344:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1018,7 +1018,7 @@ var router_ = __webpack_require__(1853);
 ;// CONCATENATED MODULE: external "react-icons/vsc"
 const vsc_namespaceObject = require("react-icons/vsc");
 // EXTERNAL MODULE: ./styles/Scroll.module.css
-var Scroll_module = __webpack_require__(7680);
+var Scroll_module = __webpack_require__(308);
 var Scroll_module_default = /*#__PURE__*/__webpack_require__.n(Scroll_module);
 ;// CONCATENATED MODULE: ./components/TopScroll.js
 
@@ -1029,8 +1029,8 @@ var Scroll_module_default = /*#__PURE__*/__webpack_require__.n(Scroll_module);
 
 function TopScroll() {
     const router = (0,router_.useRouter)();
-    const { 0: isMobile , 1: setIsMobile  } = (0,external_react_.useState)(false);
-    const { 0: scrollPosition , 1: setScrollPosition  } = (0,external_react_.useState)(0);
+    const [isMobile, setIsMobile] = (0,external_react_.useState)(false);
+    const [scrollPosition, setScrollPosition] = (0,external_react_.useState)(0);
     const handleScroll = ()=>{
         const position = window.pageYOffset;
         setScrollPosition(position);
@@ -1065,7 +1065,7 @@ function TopScroll() {
 
 /***/ }),
 
-/***/ 8510:
+/***/ 8484:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1079,10 +1079,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_auth_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(427);
 /* harmony import */ var next_auth_client__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_auth_client__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6201);
-/* harmony import */ var _components_Nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5455);
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3193);
-/* harmony import */ var _components_Socials__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7033);
-/* harmony import */ var _components_TopScroll__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5279);
+/* harmony import */ var _components_Nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8731);
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(723);
+/* harmony import */ var _components_Socials__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(1283);
+/* harmony import */ var _components_TopScroll__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8344);
+/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(6764);
+/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_7__);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_hot_toast__WEBPACK_IMPORTED_MODULE_2__, _components_Nav__WEBPACK_IMPORTED_MODULE_3__]);
 ([react_hot_toast__WEBPACK_IMPORTED_MODULE_2__, _components_Nav__WEBPACK_IMPORTED_MODULE_3__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
 
@@ -1114,6 +1116,13 @@ __webpack_async_result__();
 
 /***/ }),
 
+/***/ 6764:
+/***/ (() => {
+
+
+
+/***/ }),
+
 /***/ 5782:
 /***/ ((module) => {
 
@@ -1138,6 +1147,22 @@ module.exports = require("next-auth/client");
 
 /***/ }),
 
+/***/ 3918:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/amp-context.js");
+
+/***/ }),
+
+/***/ 5732:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/amp-mode.js");
+
+/***/ }),
+
 /***/ 3280:
 /***/ ((module) => {
 
@@ -1154,19 +1179,19 @@ module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
 
-/***/ 4957:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/head.js");
-
-/***/ }),
-
 /***/ 4014:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
+
+/***/ }),
+
+/***/ 4486:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/image-blur-svg.js");
 
 /***/ }),
 
@@ -1183,6 +1208,14 @@ module.exports = require("next/dist/shared/lib/image-config-context.js");
 
 "use strict";
 module.exports = require("next/dist/shared/lib/image-config.js");
+
+/***/ }),
+
+/***/ 9552:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/image-loader");
 
 /***/ }),
 
@@ -1346,11 +1379,27 @@ module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
 
 /***/ }),
 
+/***/ 2470:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/side-effect.js");
+
+/***/ }),
+
 /***/ 9232:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/utils.js");
+
+/***/ }),
+
+/***/ 618:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/utils/warn-once.js");
 
 /***/ }),
 
@@ -1367,6 +1416,14 @@ module.exports = require("next/router");
 
 "use strict";
 module.exports = require("react");
+
+/***/ }),
+
+/***/ 6405:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react-dom");
 
 /***/ }),
 
@@ -1425,7 +1482,7 @@ module.exports = import("react-hot-toast");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [503,675,676,664], () => (__webpack_exec__(8510)));
+var __webpack_exports__ = __webpack_require__.X(0, [210,121,675,676,664], () => (__webpack_exec__(8484)));
 module.exports = __webpack_exports__;
 
 })();
