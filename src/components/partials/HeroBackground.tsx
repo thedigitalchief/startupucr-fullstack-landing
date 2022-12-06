@@ -15,24 +15,24 @@ import {
 const HeroBackground = () => {
   return (
     <>
-      <FiBarChart2 size={30} className="absolute  top-60 left-10 hidden text-teal-500 sm:inline-block md:left-24" />
+      <FiBarChart2 size={30} className="absolute  top-60 left-10 hidden text-grey-200 sm:inline-block md:left-24" />
       <FiBell size={30} className="animate-bell  absolute top-28 right-2/3 hidden blue-indigo-500 sm:inline-block" />
       <FiCode size={30} className="absolute  top-48 right-1/2 hidden animate-bounce text-indigo-500 sm:inline-block" />
       <FiPieChart
         size={30}
-        className="animate-move  absolute bottom-10 right-20 hidden text-fuchsia-500 sm:inline-block md:right-48"
+        className="animate-move  absolute bottom-10 right-20 hidden text-black-500 sm:inline-block md:right-48"
       />
       <FiStar size={30} className="absolute  top-36 right-10 hidden text-blue-700 sm:inline-block md:right-24" />
       <FiTriangle
         size={30}
-        className="animate-move-rotate  absolute top-1/3 right-1/4 hidden text-green-200 sm:inline-block"
+        className="animate-move-rotate  absolute top-1/3 right-1/4 hidden text-blue-800 sm:inline-block"
       />
       <FiCloud size={30} className="absolute bottom-48  left-2/3 hidden animate-pulse text-blue-500 sm:inline-block" />
       <FiCircle
         size={30}
         className="absolute bottom-20  left-16 hidden animate-bounce text-blue-300 sm:inline-block md:left-40"
       />
-      <FiHexagon size={30} className="absolute top-96 left-1/4 hidden animate-spin text-purple-500 sm:inline-block" />
+      <FiHexagon size={30} className="absolute top-96 left-1/4 hidden animate-spin text-purple-800 sm:inline-block" />
       <ul className={styles.circles}>
         <li className="bg-primary-300"></li>
         <li className="bg-purple-300"></li>
