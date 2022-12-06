@@ -1,0 +1,12 @@
+.experience,
+.education {
+  @apply relative;
+
+  &-item {
+    @apply ml-7;
+  }
+
+  &-item:not(:last-child) {
+    @apply mb-10;
+  }
+}
