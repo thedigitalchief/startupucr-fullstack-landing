@@ -1,7 +1,0 @@
-{
-  "extends": ["next", "next/core-web-vitals"],
-  "rules": {
-    "react/jsx-key": 0,
-    "react-hooks/exhaustive-deps": 0
-  }
-}
