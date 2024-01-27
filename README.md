@@ -1,6 +1,8 @@
-Startup@UCR 
+Startup@UCR Club Landing Full Stack Website
 
+www.startupucr-digitalchief.vercel.app
 www.startupucr.com
+
 
 ### Stack
 
